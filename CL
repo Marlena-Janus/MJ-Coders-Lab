@@ -1,0 +1,14 @@
+[alias]
+    ls = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]--decorate
+    ll = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]--decorate --numstat
+    lnc = log --pretty=format:%h\\ %s\\ [%cn]
+    lds = log --pretty=format:%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]--decorate --date=short
+    ld = log --pretty=format:%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]--decorate --date=relative
+    le = log --oneline --decorate
+    st = status
+    df = diff
+    cm = "!f() { git commit -m \"$@\"; }; f"
+    cmp = "!f() { git add -A && git commit -m \"$@\" && git push; }; f"
+    am = commit --amend --no-edit
+    ps = push origin master
+    pl = pull origin master
